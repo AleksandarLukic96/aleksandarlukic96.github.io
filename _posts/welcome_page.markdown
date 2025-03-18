@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Welcome to my website!"
 date:   2025-03-18 09:58:53 +0100
 categories: jekyll update
