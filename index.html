@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>02806 Social Data Analysis and Visualization</title>
+  <style>
+    .tab {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 5px;
+      background-color: #eee;
+      cursor: pointer;
+    }
+
+    .tab.active {
+      background-color: #ccc;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Parking in Copenhagen</h1>
+
+  <div id="tabs">
+    <div class="tab active" data-tab="tab1">Introduction</div>
+    <div class="tab" data-tab="tab2">Parking over the years</div>
+    <div class="tab" data-tab="tab3">It is really get harder to find parking?</div>
+    <div class="tab" data-tab="tab4">How to find parking in 2025</div>
+  </div>
+
+  <div id="tab-contents">
+    <div id="tab1" class="tab-content active">
+      <h2>Intro</h2>
+      <p>Introduction...</p>
+    </div>
+    <div id="tab2" class="tab-content">
+      <h2>Parking over the years</h2>
+      <p>Parking over the years blah blah</p>
+    </div>
+    <div id="tab3" class="tab-content">
+      <h2>It is really get harder to find parking?</h2>
+      <p>Yes! Or maybe...</p>
+    </div>
+    <div id="tab4" class="tab-content">
+      <h2>How to find parking in 2025</h2>
+      <p>Get a bike</p>
+    </div>
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
