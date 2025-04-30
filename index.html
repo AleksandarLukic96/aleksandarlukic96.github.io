@@ -5,26 +5,25 @@ layout: default
 <div id="tabs">
   <div class="tab active" data-tab="tab1">Introduction</div>
   <div class="tab" data-tab="tab2">Parking</div>
-  <div class="tab" data-tab="tab3">Plots</div>
+  <div class="tab" data-tab="tab3">Car Ownership</div>
 </div>
 
 <div id="tab-contents">
-  {% include Introduction.html %}
-  {% include Parking.html %}
-  {% include Plots.html %}
+  {% include Introduction.html %} {% include Parking.html %} {% include
+  CarOwnership.html %}
 </div>
 
 <script>
-  const tabs = document.querySelectorAll('.tab');
-  const contents = document.querySelectorAll('.tab-content');
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".tab-content");
 
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      contents.forEach(c => c.classList.remove('active'));
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      contents.forEach((c) => c.classList.remove("active"));
 
-      tab.classList.add('active');
-      document.getElementById(tab.dataset.tab).classList.add('active');
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.tab).classList.add("active");
     });
   });
 </script>
