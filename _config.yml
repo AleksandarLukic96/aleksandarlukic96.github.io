@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Alek's github.io
+title: Parking in Copenhagen 
 email: aleksandar_lukic@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   This website follows the course 02806 Social Data Analysis and Visualisation.
