@@ -5,13 +5,17 @@ layout: default
 <div id="tabs">
   <div class="tab active" data-tab="tab1">Introduction</div>
   <div class="tab" data-tab="tab2">Parking</div>
-  <div class="tab" data-tab="tab3">Car Ownership</div>
+  <div class="tab" data-tab="tab3">Are Parking Spots Disappearing?</div>
+  <div class="tab" data-tab="tab4">Car Ownership</div>
+  <div class="tab" data-tab="tab5">Will It Get better?</div>
 </div>
 
 <div id="tab-contents">
   {% include Introduction.html %}
   {% include Parking.html %}
+  {% include AreParkingSpotsDisappearing.html %}
   {% include CarOwnership.html %}
+  {% include WillItGetBetter.html %}
 </div>
 
 <script>
