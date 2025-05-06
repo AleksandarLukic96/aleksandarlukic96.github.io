@@ -1,21 +1,29 @@
 <div id="tab2" class="tab-content">
   <h2>Parking</h2>
   <p>
-    Number of parking spaces through the last years can be seen in the
-    following figure...
+    Before diving into why parking seems to be difficult to find in Copenhagen, we should first ascertain whether parking opportunities have actually been diminishing. 
+    The idea is simple: if the the number of parking spaces are decreasing, parking should be harder to get. So, let's looks at a simple bar graph of new parking spaces in Copenhagen over the years.
   </p>
 
-  It's interesting to see how the fluctuations. The spike in XX could be due
-  to...
-
-  Every parking space in Copenhagen is registered and is visualised on the next figure.
   <div class="plot-container">
-    <img
-      src="../assets/figures/Parking Spots.png"
-      alt="Parking Spaces"
-      class="iframe"
-    ></img>
+    <img src="../assets/figures/new parking from 2008.png" alt="New Parking Spaces" class="iframe"></img>
   </div>
 
-  Of course, we do not suggest using this figure to try and find a parking spot in Copenhagen. There are much more appropriate tools for that, such as the app EasyPark or the government website <a href="https://kbhkort.kk.dk/spatialmap?" target="_blank">kbhkort.kk.dk</a>.
+  From this figure, it seems like there should be more parking. However, it does not say anything about how many parking spaces are dissappearing. In addition, just the existance of more parking does not mean it's easier to find parking as they could easily be filled by an increasing number of cars. So, instead let's investigate the mean occupancy - meaning the percentage of used parking at a given street in the city.  
+
+  <div class="plot-container">
+    <img src="../assets/figures/mean occupancy bar.png" alt="Bar Occupancy" class="iframe"></img>
+  </div>
+
+  Again, this figure does not show the whole picture. On the surface, it seems like there are always parking available and the occupancy even seems to have decreased the last six years. Still, showing the mean for the whole city can be misleading and is perhaps not the best pointer to finding parking opportunities. Perhaps, if we explored the district individually, we would see patterns in the city. 
+  To explore the mean occupancy for the different districts, use the filter button on the following visualisation. 
+
+  <div class="map-container">
+    <iframe src="../assets/figures/interactive_occupancy_plot.html" class="iframe"></iframe>
+  </div>
+
+  Looking at this, the problem is obviously a bit nuanced. Some districts (like Valby) have low occupancy, but that is not going to help you if you ar elooking for a parking spot at Vesterbro in the evening.
+  But even at Vesterbro, there should be some parking available, so what could result in people not being able to find parking?
+  In the next slide we will take a look at why available parking does not neccesarily mean that it is easy to find parking.
+
 </div>
