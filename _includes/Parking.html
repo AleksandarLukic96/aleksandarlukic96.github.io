@@ -4,12 +4,19 @@
     Before diving into why parking seems to be difficult to find in Copenhagen, we should first ascertain whether parking opportunities have actually been diminishing. 
     The idea is simple: <strong>if the the number of parking spaces are decreasing, parking should be harder to find</strong>. <br> So, let's looks at a simple graph of total street parking spaces in Copenhagen over the years.
     
-    <div class="plot-container">
-      <img src="../assets/figures/Parking Spaces.png" alt="New Parking Spaces" class="iframe"></img>
+  <div class="figure-text-container">
+    <div class="text-block">
+      From this figure, it seems like there should be <em>more</em> parking. However, for several reasons, simply having
+      more parking spaces does not necessarily mean that it is easier to find parking. Maybe the increase in parking
+      spaces is not keeping up with the increase in cars. So, instead let's investigate the <em>mean occupancy</em> –
+      meaning the percentage of used parking at a given street in the city.
     </div>
-    
-    From this figure, it seems like there should be <em>more</em> parking. However, for several reaons, simply having more parking spaces does not neccesarily mean that it is easier to find parking. Maybe, the increase in parking spaces is not keeping up with the increase in cars. So, instead let's investigate the <em>mean occupancy</em> - meaning the percentage of used parking at a given street in the city.  
-    
+
+    <div class="plot-container">
+      <img src="../assets/figures/Parking Spaces.png" alt="New Parking Spaces" class="iframe" />
+    </div>
+  </div>
+
     <div class="plot-container">
       <img src="../assets/figures/mean occupancy bar.png" alt="Bar Occupancy" class="iframe"></img>
     </div>
@@ -18,7 +25,9 @@
     To explore the mean occupancy for the different districts, use the filter button on the following visualisation. 
     
     <div class="map-container">
-      <iframe src="../assets/figures/interactive_occupancy_plot.html" class="iframe"></iframe>
+      <iframe src="../assets/figures/interactive_occupancy_plot.html" class="iframe"
+      style="min-height: 460px;"
+      ></iframe>
     </div>
     
     Looking at this, the problem is obviously a bit nuanced. Some districts (like Valby) have low occupancy, but that is not going to help you if you are looking for a parking spot at Vesterbro in the evening.
