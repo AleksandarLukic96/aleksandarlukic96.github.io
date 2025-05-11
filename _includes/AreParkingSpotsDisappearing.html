@@ -2,43 +2,28 @@
   <h2>Are Parking Spots Disappearing?</h2>
   <p>
     Is something rotten in the state of Copenhagen, when it comes to car parking spots?
-    Well, it is not such an easy question to answer. The number of parking spots in the city has been fluctuating over the
-    years and as new spots are created, old ones simply to simply vanish.
-  </p>
-  
-  <p>
-    If you were interested, these are the more than 120000 currently registered parking spots in Copenhagen.
-  </p>
-  
-  <div class="plot-container">
-    <img src="../assets/figures/Parking Spots.png" alt="Parking Spaces" class="iframe" 
-    style="max-height: 750px; max-width: 750px; place-self: center;"
-
-    />
-  </div>
-  
-  <p>
-    Of course, we do not suggest using this figure to try and find a parking spot in Copenhagen. There are much more
-    appropriate tools for that, such as the app EasyPark or the government website
-    <a href="https://kbhkort.kk.dk/spatialmap?" target="_blank">kbhkort.kk.dk</a>.
-  </p>
-  
-  <p>
-    So, since this map isn't really helping, let's try something else.
+    Well, it is not such an easy question to answer. While we have established that the total number of parking spots in the city technically has been steadily growing,
+    we do not know if this means that there are more free parking spaces to find when you drive around the city. We do not know if parking spaces are growing propotionally to the citizens' needs. 
+    But by combining the car ownership data with the parking data, we can get a better idea of the parking situation in Copenhagen.
   </p>
   
   <p>
     Perhaps the reason parking seems to be so difficult to find is that the parking spaces are actually being moved
     around or changed. Every year, parking spaces are being changed and drivers might find it difficult to figure out where parking
-    can now be found or if they can even use said parking space.
-    What can be seen on the next figure, is the amount of parking spaces that have had restrictions added to it in a given year in Copenhagen. No wonder people are confused. 
+    can now be found or if they can even use said parking space. A parking space that worked for you last week, might not work for you this week.
+    What can be seen on the next figure, is the amount of parking spaces that have had restrictions added to it in a given year in Copenhagen. 
   </p>
 
-  [INSERT PLOT]
+  <div class="plot-container">
+    <iframe src="../assets/figures/parking_spaces_by_type.html" class="iframe" style="min-height: 610px;"></iframe>
+  </div>
   
   <p>
-    And this is not just something that has been happening the last couple of years. Back in 2017, the city of Copenhagen faced big changes as many parking spaces were being changed from free to paid [<a href="https://nyheder.tv2.dk/lokalt/2017-03-01-se-kortet-her-er-det-nu-slut-med-gratis-parkering-i-koebenhavn"
-      target="_blank">TV2.dk</a>]. This initiative decreased occupancy in the affacted zones by around 30% [<a href="https://www.kk.dk/nyheder/tidsbegraenset-parkering-i-flere-bydele"target="_blank">KK.dk</a>] which technically made it easier to find parking, but harder to find <em>free</em> parking. 
+    Given how there are about 120000 street parking spaces in Copenhagen, 2021 and 2024 saw around 33% and 25% of all parking spaces effectively being changed, respectively.
+     No wonder people might be confused. Even more recently, 72000 parking spaces (60% of all) are again being modified as free parking on Sundays
+     is being removed as of April 2025 [<a href="https://fdm.dk/nyheder/bilist/2025-03-slut-med-gratis-soendagsparkering-koebenhavn-saa-meget-skal-du-betale#:~:text=Nu%20skal%20du%20betale%20alle,og%20p%C3%A5%20s%C3%B8ndage%20og%20helligdage"target="_blank">fdm.dk</a>].
+     And this trend is not just something that has been happening the last couple of years. Back in 2017, the city of Copenhagen faced big changes as many parking spaces were being changed from free to paid [<a href="https://nyheder.tv2.dk/lokalt/2017-03-01-se-kortet-her-er-det-nu-slut-med-gratis-parkering-i-koebenhavn"
+      target="_blank">TV2.dk</a>]. This initiative decreased occupancy in the affected zones by around 30% [<a href="https://www.kk.dk/nyheder/tidsbegraenset-parkering-i-flere-bydele"target="_blank">KK.dk</a>] which technically made it easier to find parking, but harder to find <em>free</em> parking. 
   </p>
 
   <p>
@@ -50,8 +35,10 @@
     All of this, and the general enthousiasm for eletric cars, has resulted in the number of electric cars increasing as shown in the following figure. Notice how electric cars are the only type of car that have been steadily increasing in the last four years.
   </p>
   
-  <div class="plot-container">
-    <img src="../assets/figures/car ownership time series.png" alt="Electric Cars" class="iframe" />
+  <div class="map-container">
+    <iframe src="../assets/figures/vehicle_ownership_plot.html" class="iframe"
+    style="min-height: 700px;
+    "></iframe>
   </div>
 
   <p>
@@ -60,7 +47,7 @@
   
   <p>
     Another reason that parking spots can be difficult to find in inner-Copenhagen is the centralisation and privatisation of parking spaces. Over the last 20 years, multiple parking
-    buildings have been constructed in Copenhagen. [<a href="https://ebp.dk/en/parking-in-copenhagen/?utm_source=chatgpt.com" target="_blank">dbp.dk,</a> <a href="https://www.visitcopenhagen.dk/koebenhavn/planlaeg-din-tur/parkeringshuse-i-koebenhavn" target="_blank">visitcopenhagen.dk,</a> <a href="https://copark.dk/kaempe-p-hus-aabner-snart-i-hjertet-af-koebenhavn/#:~:text=Fra%20den%201.,parkeringspladser%2C%20der%20udbydes%20til%20beboerne." target="_blank">copark.dk</a>]. While this has increased the overall number of parking
+    buildings have been constructed in Copenhagen. [<a href="https://ebp.dk/en/parking-in-copenhagen" target="_blank">dbp.dk,</a> <a href="https://www.visitcopenhagen.dk/koebenhavn/planlaeg-din-tur/parkeringshuse-i-koebenhavn" target="_blank">visitcopenhagen.dk,</a> <a href="https://copark.dk/kaempe-p-hus-aabner-snart-i-hjertet-af-koebenhavn/#:~:text=Fra%20den%201.,parkeringspladser%2C%20der%20udbydes%20til%20beboerne." target="_blank">copark.dk</a>]. While this has increased the overall number of parking
     spaces, a lot of parking spaces on street level have been removed [<a href="https://via.ritzau.dk/pressemeddelelse/13763116/nedlaeggelsen-af-600-p-pladser-i-byens-hjerte-naermer-sig?publisherId=13560117&lang=da" target="_blank">ritzau.dk</a>], which leads to the feeling that there is
     no apparent parking.
   </p>
