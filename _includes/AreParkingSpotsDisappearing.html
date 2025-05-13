@@ -6,16 +6,36 @@
     we do not know if this means that there are more free parking spaces to find when you drive around the city. We do not know if parking spaces are growing propotionally to the citizens' needs. 
     But by combining the car ownership data with the parking data, we can get a better idea of the parking situation in Copenhagen.
   </p>
+
+  <div class="plot-container"
+  style="width: 80%;"
+  >
+    <img src="../assets/figures/Car ownership vs Parking Spaces.png" alt="Bar Occupancy" class="iframe"
+    ></img>
+    <figcaption style="text-align: center; font-style: italic; margin-top: 0.5em;">
+      Figure 5: Registered street parking spaces and registered cars in Copenhagen.
+    </figcaption>
+  </div>
+
+  <p>
+    Looking at this figure, it is clear that the amount of cars is growing much faster than the amount of parking spaces.
+    So much so even that it is strange that this was not reflected in the occupancy data. From this comparison alone, it would seem impossible for all cars to be parked at the same time.
+    Of course, this is not the case and ignores other factors such as private parking, garages, parking houses and the such. Nevertheless, is clearly shows that the demand for parking is not going down and cannot be matched by the current level of street parking.
+  </p>
+
   
   <p>
-    Perhaps the reason parking seems to be so difficult to find is that the parking spaces are actually being moved
-    around or changed. Every year, parking spaces are being changed and drivers might find it difficult to figure out where parking
+    Perhaps another reason parking seems to be so difficult to find is that the parking spaces are actually being moved
+    around or changed. Every year, parking spaces are being modified and drivers might find it difficult to figure out where parking
     can now be found or if they can even use said parking space. A parking space that worked for you last week, might not work for you this week.
     What can be seen on the next figure, is the amount of parking spaces that have had restrictions added to it in a given year in Copenhagen. 
   </p>
 
   <div class="plot-container">
     <iframe src="../assets/figures/parking_spaces_by_type.html" class="iframe" style="min-height: 610px;"></iframe>
+    <figcaption style="text-align: center; font-style: italic; margin-top: 0.5em;">
+      Figure 6: Interactive stacked bar chart of parking spaces that have had restrictions added in a given year.
+    </figcaption>
   </div>
   
   <p>
@@ -37,8 +57,11 @@
   
   <div class="map-container">
     <iframe src="../assets/figures/vehicle_ownership_plot.html" class="iframe"
-    style="min-height: 700px;
+    style="min-height: 470px;
     "></iframe>
+    <figcaption style="text-align: center; font-style: italic; margin-top: 0.5em;">
+      Figure 7: Interactive plot of cars registered in Copenhagen seperated by fuel type.
+    </figcaption>
   </div>
 
   <p>
@@ -53,10 +76,6 @@
   </p>
   <p>
     It should again be noted, that our datasets concern street parking, and therefore parking houses are not reflected in the datasets we are using. 
-  </p>
-
-  <p>
-    
   </p>
 
 </div>
